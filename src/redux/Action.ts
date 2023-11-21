@@ -1,0 +1,26 @@
+export const TodoAction = {
+    todoGet:{
+        fulfill:(data:any)=>({
+            type:'GET_TODO_LIST',
+            payload:data
+        })
+    },
+    todoCreate:{
+        fulfill:(data:any)=>({
+            type:'CREATE_TODO',
+            payload:data
+        })
+    },
+    todoUpdate:{
+        fulfill:(data:any)=>({
+            type:'UPDATE_TODO',
+            payload:data
+        })
+    },
+    todoDelete:{
+        fulfill:(data:any)=>({
+            type:'DELETE_TODO',
+            payload:data
+        })
+    }
+}
